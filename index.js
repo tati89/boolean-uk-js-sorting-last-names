@@ -24,10 +24,11 @@ Output the result into the console.
 */
 
 const names = ["Mason", "Marcora", "Rico", "Neves", "Ivanov"];
-names.push("Kudrashova");
+const yourLastName = prompt("What is your last name?");
+names.push(yourLastName);
 console.log(names);
 console.log(names.sort());
-console.log(names.indexOf("Kudrashova"));
+console.log(names.indexOf(yourLastName));
 const upperCaseNames = [];
 for (const name of names) {
   console.log(name.toUpperCase());
